@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/* 
+font-family: "Inter", sans-serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Dark blue */
+  --Dark_blue_100: #609ed4;
+  --Dark_blue_200: #356ea9;
+  --Dark_blue_300: #0a3871;
+  --Dark_blue_400: #072b61;
+  --Dark_blue_500: #052051;
+  /* Light blue */
+  --Light_blue_100: #f3f5fc;
+  --Light_blue_200: #eff1fa;
+  --Light_blue_300: #e9ecf8;
+  --Light_blue_400: #aab2d5;
+  --Light_blue_500: #757fb2;
+  /* Gray */
+  --Gray_100: #ced4da;
+  --Gray_200: #adb5bd;
+  --Gray_300: #868e96;
+  --Gray_400: #495057;
+  --Gray_500: #343a40;
+}
+
+body {
+  color: var(--Dark_blue_300);
+  background-color: var(--Light_blue_100);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+header {
+  margin: 0 0 0 100px;
+}
+#text, #textSalida {
+  appearance: none;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  color: var(--Dark_blue_300);
+  padding: 10px;
+  background-color: transparent;
+  /* border: 1px solid var(--Light_blue_100); */
+  border: 0;
+  text-align: left;
+}
+#text::placeholder,
+#text:focus-visible {
+  color: #0a3871;
+  border: 1px solid var(--Light_blue_100);
+}
+
+.Logo {
+  /* height: 48px; */
+  /* width: 120px; */
+  color: var(--Dark_blue_300);
+  font-size: 90px;
+}
+/* Contenido visible */
+main.contenido {
+  font-family: "Inter", sans-serif;
+  /* width: 100%; */
+  height: 85vh;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 50px;
+  margin-left: 170px;
+}
+/* Secciones del documento */
+section.section1 {
+  /* font-family: "Inter", sans-serif; */
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* img{
+  width: 100%;
+  height: 100%;
+} */
+section.section2 {
+  /* font-family: "Inter", sans-serif; */
+  width: 400px;
+  height: 90%;
+  background-color: white;
+  border-radius: 32px;
+  padding: 32px;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 8px 10px;
+}
+/* Diseño de botones */
+div.contentButton {
+  display: flex;
+  justify-content: space-between;
+}
+button.boton {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  width: 228px;
+  height: 67px;
+  border: solid 1px var(--Dark_blue_300);
+  border-radius: 24px;
+}
+.boton1 {
+  color: var(--Light_blue_100);
+  background-color: var(--Dark_blue_300);
+}
+.boton2 {
+  color: var(--Dark_blue_300);
+}
+
+/* Footer propio */
+.footer {
+  color: var(--Light_blue_100);
+  background-color: var(--Dark_blue_300);
+  font-weight: 100;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  height: 50px;
+  text-align: center;
+  align-content: center;
+}

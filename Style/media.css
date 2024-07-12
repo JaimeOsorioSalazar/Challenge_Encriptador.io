@@ -1,0 +1,90 @@
+@media (width < 375px) {
+ body{
+  /* background-color: black; */
+  width: max-content;
+
+ }
+ header{
+  width: 375px;
+ }
+ main.contenido{
+  width: auto;
+  height: max-content;
+  padding: 10px;
+  margin: 0 0 0 20px;
+  flex-direction: column;
+ }
+ section.section1{
+  width: 90%;
+  height:400px;
+  margin: 0;
+ }
+ 
+ section.section2{
+  width: 71%;
+  height: 186px;
+  color: black;
+
+ }
+ section.section2>h2{
+  margin-bottom: 10px;
+ }
+ div.contentButton{
+  width: 110%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+ }
+ button.boton{
+  width: 70%;
+  height: 56px;
+  margin-bottom: 20px;
+ }
+ img{
+  display: none;
+ }
+ footer.footer{
+  width: 80%;
+ }
+}
+@media ( 375px < width < 768px ){
+ body{
+  /* background-color: black; */
+ min-width: 100%;
+ }
+ header{
+  width: 375px;
+  margin: 0 0 0 30px ;
+ }
+ main.contenido{
+  width: max-content;
+  height: max-content;
+  /* padding: 10px; */
+  margin: 0 0 0 50px ;
+  flex-direction: column;
+ }
+ section.section1{
+  width: 100%;
+  height:400px;
+  margin: 0;
+ }
+ 
+ section.section2{
+  width: 100%;
+  height: 186px;
+  color: black;
+
+ }
+ section.section2>h2{
+  margin-bottom: 10px;
+ }
+ button.boton{
+ 
+  width: 175px;
+  height: 56px;
+ }
+ img{
+  display: none;
+ }
+}
