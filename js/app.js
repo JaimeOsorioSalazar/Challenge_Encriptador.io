@@ -1,3 +1,4 @@
+console.log("HOLA JAIMEGIT");
 function encriptar() {
   // Retirar texto 
 
