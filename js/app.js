@@ -1,4 +1,4 @@
-// console.log("HOLA JAIMEGIT");
+
 function encriptar() {
   // Retirar texto 
   let retirar = document.querySelector(".textoParaRetirar");
