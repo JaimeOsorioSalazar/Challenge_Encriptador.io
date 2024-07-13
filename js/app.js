@@ -1,12 +1,13 @@
-console.log("HOLA JAIMEGIT");
+// console.log("HOLA JAIMEGIT");
 function encriptar() {
   // Retirar texto 
-
-  // Variables declaradas
   let retirar = document.querySelector(".textoParaRetirar");
   let retirar2 = document.querySelector(".textoParaRetirar2");
 
+
+  // Variables declaradas
   let parrafo = document.getElementById("text").value;
+  // let place = document.getElementById("text");
   let imagen = document.getElementById("imagen");
   console.log(parrafo);
   let parrafoLowerCase = parrafo.toLowerCase();
@@ -43,8 +44,45 @@ function encriptar() {
   retirar2.remove();
 
   
-  document.getElementById("text").value = " ";
-  document.getElementById("tex")
+  document.getElementById("text").value = "";
+  // place.ariaPlaceholder = "Ingresa texto aquí";
   imagen.remove();
 }
+// Función desencriptador
+function desencriptador() {
+  let retirar = document.querySelector(".textoParaRetirar");
+  let retirar2 = document.querySelector(".textoParaRetirar2");
+  let parrafoSalidad = document.getElementById("textSalida");
+  
+  let cambio = ["ai", "enter", "imes", "ober", "ufat"];
+  const por = ["a", "e", "i", "o", "u"];
 
+  let parrafor = document.getElementById("text").value ;
+  let arreglo = parrafor.split(" ").join(" ");
+  console.log();
+  if (parrafor.length == 0) {
+    console.log("No has puesto nada");
+  } else {
+    for (let i = 0; i < cambio.length; i++) {
+      if (arreglo.includes(cambio[i])) {
+        arreglo = arreglo.replace(new RegExp(cambio[i], "g"), por[i]);
+      }
+    }
+  }
+  parrafoSalidad.innerHTML = arreglo;
+
+  retirar.remove();
+  retirar2.remove();
+  imagen.remove();
+
+}
+
+// Funcion copiar *** No esta terminado ***
+function copiar() {
+  console.log("Evento copiado");
+  let copiarTexto = document.getElementById("textSalida");
+  copiarTexto.getSelection();
+  // copiarTexto.addEventListener("copy", (event)=> )
+
+  
+}
