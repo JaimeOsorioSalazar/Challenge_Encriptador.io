@@ -29,7 +29,11 @@ console.log(str.includes("nonexistent")); // false
 console.log(str.includes("To be", 15)); // false
 console.log(str.includes("TO BE")); // false
 console.log(str.includes("")); // true */
-let textoACopiar = document.getElementById("textSalida").textContent;
+
+
+// Boton de copia en funcionamiento - Estudiar clipboard.writeText() <= 
+
+/* let textoACopiar = document.getElementById("textSalida").textContent;
 let textoCopiado = document.querySelector(".botonCopia").addEventListener('click', async () => {
   const texto_a_copiar = document.getElementById("textSalida").textContent;
   console.log(texto_a_copiar);
@@ -40,7 +44,7 @@ let textoCopiado = document.querySelector(".botonCopia").addEventListener('click
       console.error('Error al copiar el texto: ', err);
       alert('Error al copiar el texto');
   }
-});
+}); */
 
 
 /* textoCopiado.addEventListener("click", (event)=>{
@@ -52,3 +56,10 @@ let textoCopiado = document.querySelector(".botonCopia").addEventListener('click
   */
 
  // Creas un evento de escucha para el botón
+
+function visible () {
+  let botonCopiaVisible = document.querySelector(".contentButtonC");
+  botonCopiaVisible.removeAttribute("style");
+  // botonCopiaVisible.setAttribute("display", "block")
+}
+

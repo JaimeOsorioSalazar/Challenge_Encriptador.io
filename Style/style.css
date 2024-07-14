@@ -32,7 +32,7 @@ body {
   /* width: 1280px; */
   /* margin: 0 auto; */
 
-  border: 5px solid red;
+  /* border: 5px solid red; */
   color: var(--Dark_blue_300);
   background-color: var(--Light_blue_100);
   display: flex;
@@ -52,14 +52,13 @@ header {
   color: var(--Dark_blue_300);
   padding: 10px;
   background-color: transparent;
-  /* border: 1px solid var(--Light_blue_100); */
   border: 0;
   text-align: left;
 }
 #text::placeholder,
 #text:focus-visible {
   color: #0a3871;
-  border: 1px solid var(--Light_blue_100);
+  /* border: 1px solid var(--Light_blue_100); */
 }
 
 .Logo {
@@ -92,21 +91,27 @@ section.section1 {
   height: 100%;
 } */
 section.section2 {
-  /* font-family: "Inter", sans-serif; */
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
   width: 400px;
   height: 90%;
   background-color: white;
   border-radius: 32px;
   padding: 32px;
   align-content: center;
-  align-items: center;
+  /* align-items: center; */
   text-align: center;
   box-shadow: 0 8px 10px;
 }
 /* Diseño de botones */
-div.contentButton {
+div.contentButton, div.contentButtonC {
   display: flex;
   justify-content: space-between;
+}
+div.contentButtonC{
+  color: var(--Dark_blue_300);
+  justify-content: center;
 }
 button.boton {
   font-size: 16px;
@@ -114,14 +119,14 @@ button.boton {
   letter-spacing: 1.5px;
   width: 228px;
   height: 67px;
-  border: solid 1px var(--Dark_blue_300);
+    border: solid 1px var(--Dark_blue_300);
   border-radius: 24px;
 }
 .boton1 {
   color: var(--Light_blue_100);
   background-color: var(--Dark_blue_300);
 }
-.boton2 {
+.botonCopia, .boton2 {
   color: var(--Dark_blue_300);
 }
 

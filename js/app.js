@@ -42,7 +42,7 @@ function encriptar() {
   console.log(`Resultado: ${resultado}`);
   retirar.remove();
   retirar2.remove();
-
+  visible();
   
   document.getElementById("text").value = "";
   // place.ariaPlaceholder = "Ingresa texto aquí";
@@ -74,7 +74,7 @@ function desencriptador() {
   retirar.remove();
   retirar2.remove();
   imagen.remove();
-
+  visible();
 }
 
 // Funcion copiar *** No esta terminado ***
@@ -90,3 +90,9 @@ let textoCopiado = document.querySelector(".botonCopia").addEventListener('click
       alert('Error al copiar el texto');
   }
 });
+
+function visible () {
+  let botonCopiaVisible = document.querySelector(".contentButtonC");
+  botonCopiaVisible.removeAttribute("style")
+  // botonCopiaVisible.setAttribute("display", "block")
+}
