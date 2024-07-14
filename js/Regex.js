@@ -1,4 +1,4 @@
-// const re = new RegExp(cambio, "g");
+/* // const re = new RegExp(cambio, "g");
 
 function desencriptador() {
   let cambio = ["ai", "enter", "imes", "ober", "ufat"];
@@ -20,7 +20,7 @@ console.log(arreglo);
   return arreglo
 }
 desencriptador();
-
+ */
 /* const str = "To be, or not to be, that is the question.";
 
 console.log(str.includes("To be")); // true
@@ -29,3 +29,26 @@ console.log(str.includes("nonexistent")); // false
 console.log(str.includes("To be", 15)); // false
 console.log(str.includes("TO BE")); // false
 console.log(str.includes("")); // true */
+let textoACopiar = document.getElementById("textSalida").textContent;
+let textoCopiado = document.querySelector(".botonCopia").addEventListener('click', async () => {
+  const texto_a_copiar = document.getElementById("textSalida").textContent;
+  console.log(texto_a_copiar);
+  try {
+      await navigator.clipboard.writeText(texto_a_copiar);
+      alert('Texto copiado al portapapeles');
+  } catch (err) {
+      console.error('Error al copiar el texto: ', err);
+      alert('Error al copiar el texto');
+  }
+});
+
+
+/* textoCopiado.addEventListener("click", (event)=>{
+  console.log("Boton copiado funcionando");
+  console.log(textoACopiar);
+  let prueba = event.clipboardData.setData("text/plain", textoACopiar.textContent);
+  console.log(prueba);
+  
+  */
+
+ // Creas un evento de escucha para el botón

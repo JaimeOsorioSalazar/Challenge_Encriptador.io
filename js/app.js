@@ -78,11 +78,15 @@ function desencriptador() {
 }
 
 // Funcion copiar *** No esta terminado ***
-function copiar() {
-  console.log("Evento copiado");
-  let copiarTexto = document.getElementById("textSalida");
-  copiarTexto.getSelection();
-  // copiarTexto.addEventListener("copy", (event)=> )
-
-  
-}
+let textoACopiar = document.getElementById("textSalida").textContent;
+let textoCopiado = document.querySelector(".botonCopia").addEventListener('click', async () => {
+  const texto_a_copiar = document.getElementById("textSalida").textContent;
+  console.log(texto_a_copiar);
+  try {
+      await navigator.clipboard.writeText(texto_a_copiar);
+      alert('Texto copiado al portapapeles');
+  } catch (err) {
+      console.error('Error al copiar el texto: ', err);
+      alert('Error al copiar el texto');
+  }
+});
