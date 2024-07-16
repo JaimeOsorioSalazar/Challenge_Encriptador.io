@@ -81,7 +81,7 @@ function desencriptador() {
 let textoACopiar = document.getElementById("textSalida").textContent;
 let textoCopiado = document.querySelector(".botonCopia").addEventListener('click', async () => {
   const texto_a_copiar = document.getElementById("textSalida").textContent;
-  console.log(texto_a_copiar);
+  // console.log(texto_a_copiar);
   try {
       await navigator.clipboard.writeText(texto_a_copiar);
       alert('Texto copiado al portapapeles');
@@ -91,6 +91,7 @@ let textoCopiado = document.querySelector(".botonCopia").addEventListener('click
   }
 });
 
+//Función que hace visible el boton de copiar
 function visible () {
   let botonCopiaVisible = document.querySelector(".contentButtonC");
   botonCopiaVisible.removeAttribute("style")
