@@ -1,19 +1,21 @@
 @media (width < 375px) {
  body{
   /* background-color: black; */
-  width: 100dvw;
+  width: 100%;
   /* height: max-content; */
  }
  header{
   width: 375px;
+  margin: 0 0 0 10px;
  }
  .Logo{
   text-shadow: 1px 1px 3px black;
  }
  main.contenido{
-  width: auto;
+  width: 100%;
+  height: 800px;
   padding: 10px;
-  margin: 0 0 0 20px;
+  margin: 0;
   flex-direction: column;
  }
  section.section1{
@@ -26,11 +28,15 @@
   width: 100%;
   height: 280px;
   color: black;
+  display: flex;
+  justify-content: center;
 
  }
  section.section2>h2{
   margin-bottom: 10px;
+  
  }
+ 
  div.contentButton{
   width: 100%;
   display: flex;

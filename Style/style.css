@@ -104,6 +104,12 @@ section.section2 {
   text-align: center;
   box-shadow: 0 8px 10px;
 }
+h2.textoParaRetirar{ 
+  color: var(--Gray_500);
+}
+p.textoParaRetirar2{
+  color: var(--Gray_400);
+ }
 /* Diseño de botones */
 div.contentButton, div.contentButtonC {
   display: flex;

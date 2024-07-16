@@ -62,6 +62,3 @@ function visible () {
   botonCopiaVisible.removeAttribute("style");
   // botonCopiaVisible.setAttribute("display", "block")
 }
-
-// probando el git ignore
-//
