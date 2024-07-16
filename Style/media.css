@@ -1,8 +1,6 @@
 @media (width < 375px) {
  body{
-  /* background-color: black; */
   width: 100%;
-  /* height: max-content; */
  }
  header{
   width: 375px;
@@ -56,7 +54,7 @@
   width: 100%;
  }
 }
-@media ( 375px < width < 768px ){
+@media ( 376px < width < 768px ){
  body{
   /* background-color: black; */
  width: 100dvw;
