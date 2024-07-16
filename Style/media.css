@@ -1,6 +1,6 @@
 @media (width < 720px) {
  body{
-  width: 90%;
+  width: 100%;
  }
  header{
   width: 375px;
@@ -56,7 +56,6 @@
 }
 @media ( 721px < width < 800px ){
  body{
-  /* background-color: black; */
  width: 100%;
  
  }
