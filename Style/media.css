@@ -1,72 +1,71 @@
-@media (width < 720px) {
- body{
-  width: 100%;
+@media (max-width: 720px) {
+ body {
+   width: 100%;
  }
- header{
-  width: 375px;
-  margin: 0 0 0 10px;
+ header {
+   width: 100%;
+   margin: 0 0 0 10px;
  }
- .Logo{
-  text-shadow: 1px 1px 3px black;
+ .Logo {
+   text-shadow: 1px 1px 3px black;
  }
- main.contenido{
-  width: 100%;
-  height: 800px;
-  padding: 10px;
-  margin: 0;
-  flex-direction: column;
+ main.contenido {
+   display: flex; /* Añadido */
+   width: 100%;
+   height: 800px;
+   padding: 10px;
+   margin: 0;
+   flex-direction: column;
  }
- section.section1{
-  width: 100%;
-  height:700px;
-  margin: 0;
+ section.section1 {
+   width: 100%;
+   height: 700px;
+   margin: 0;
  }
- 
- section.section2{
-  width: 100%;
-  height: 280px;
-  color: black;
-  display: flex;
-  justify-content: center;
-
+ section.section2 {
+   width: 100%;
+   height: 280px;
+   color: black;
+   display: flex;
+   justify-content: center;
  }
- section.section2>h2{
-  margin-bottom: 10px;
-  
+ section.section2 > h2 {
+   margin-bottom: 10px;
  }
- 
- div.contentButton{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+ div.contentButton {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
  }
- button.boton{
-  width: 100%;
-  height: 56px;
-  margin-bottom: 20px;
+ button.boton {
+   width: 100%;
+   height: 56px;
+   margin-bottom: 20px;
  }
- img{
-  display: none;
+ img {
+   display: none; /* Generalmente no recomendado */
  }
- footer.footer{
-  height: 600px;
-  width: 100%;
-  align-items: center;
+ footer.footer {
+   display: flex; /* Añadido */
+   height: 600px;
+   width: 100%;
+   align-items: center;
  }
- section.footer_redes{
-  flex-direction: column;
-  align-items: center;
-  height: 80%;
-  margin-top: 10px;
+ section.footer_redes {
+   display: flex; /* Añadido */
+   flex-direction: column;
+   align-items: center;
+   height: 80%;
+   margin-top: 10px;
  }
- div.redes{
-  height: 37%;
-  width: 80%;
+ div.redes {
+   height: 37%;
+   width: 80%;
  }
- img.Logo_redes{
-  display: block;
+ img.Logo_redes {
+   display: block;
  }
 }
 @media ( 721px < width < 800px ){
