@@ -6,10 +6,10 @@ Este es un Encriptador es un reto o _Challenge_ usando las bases adquiridas en e
 
 ## FUNCIONALIDAD
 > **Encriptador**
-Función con el cual se encripta el mensaje dejado para que no se pueda entender su contenido.
+> Función con el cual se encripta el mensaje dejado para que no se pueda entender su contenido.
 >
 > **Desencriptador**
-Todo mensaje que se encripta se debe desencriptar, por medio de esta función se reorganiza las palabras para dar con el mensaje original
+> Todo mensaje que se encripta se debe desencriptar, por medio de esta función se reorganiza las palabras para dar con el mensaje original
 >
 > **Copiar**
 > Con el objetivo de evitar errores al momento de desencriptar el mensaje tenemos el botón copiar con el cual copiamos el mensaje encriptado y de esa forma no perder ni una letra.
