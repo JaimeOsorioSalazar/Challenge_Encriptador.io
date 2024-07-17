@@ -1,5 +1,7 @@
 <h1 align="center">Encriptador y desencriptador</h1>
 
+![Logo de encriptador¡](./Imagenes/a.png "Logo")
+
 En inumerables ocaciones nos hemos visto en la necesidad de enviar un mensaje a otra persona. Debido a la importancía de la información muchas veces recurrimos a protegerla de otros. De esta forma nace el mensaje encriptado, el cual consiste en un mensaje **Original** el se cambia agregando, cambiando o eliminando letras, simbolos, etc. Todo con el objtivo de proteger la información hasta que llegue a las manos que deseamos que lo lean.  
 
 Este es un Encriptador es un reto o _Challenge_ usando las bases adquiridas en el programa **ONE** de la empresa **Oracle** usando lenguajes de de marcado __HTML__ dandole un diseño estimado con __CSS__ siguiendo el diseño de *FIGMA* y agregando las fucnionalidades con **JavaScript**
