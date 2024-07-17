@@ -5,11 +5,13 @@ En inumerables ocaciones nos hemos visto en la necesidad de enviar un mensaje a 
 Este es un Encriptador es un reto o _Challenge_ usando las bases adquiridas en el programa **ONE** de la empresa **Oracle** usando lenguajes de de marcado __HTML__ dandole un diseño estimado con __CSS__ siguiendo el diseño de *FIGMA* y agregando las fucnionalidades con **JavaScript**
 
 ## FUNCIONALIDAD
-> Encriptador 
+> **Encriptador**
 Función con el cual se encripta el mensaje dejado para que no se pueda entender su contenido.
-> Desencriptador
+>
+> **Desencriptador**
 Todo mensaje que se encripta se debe desencriptar, por medio de esta función se reorganiza las palabras para dar con el mensaje original
-> Copiar
-Con el objetivo de evitar errores al momento de desencriptar el mensaje tenemos el botón copiar con el cual copiamos el mensaje encriptado y de esa forma no perder ni una letra.
+>
+> **Copiar**
+> Con el objetivo de evitar errores al momento de desencriptar el mensaje tenemos el botón copiar con el cual copiamos el mensaje encriptado y de esa forma no perder ni una letra.
 
 
