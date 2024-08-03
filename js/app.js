@@ -1,8 +1,5 @@
-// Función para retirar texto e imagen 
+// Función para retirar texto e imagen
 function encriptar() {
-  // Retirar texto
- 
-
   // Variables declaradas
   let parrafo = document.getElementById("text").value;
 
@@ -11,10 +8,16 @@ function encriptar() {
   let parrafoLowerCase = parrafo.toLowerCase();
   let separado = parrafoLowerCase.split(" ").join(" ");
   let proceso = [];
-  // Proceso de encriptación en curso
-  for (let i = 0; i < separado.length; i++) {
-    proceso.push(separado[i]);
-    
+  let mayusculas = /[A-Z]/;
+  let numeros = /[0-9]/
+
+  if (mayusculas.test(parrafo) || numeros.test(parrafo)) {
+    alert("El texto no debe contener nueros o mayusculas");
+  } else {
+    // Proceso de encriptación en curso
+    for (let i = 0; i < separado.length; i++) {
+      proceso.push(separado[i]);
+
       if (separado[i] == "a") {
         proceso.push("i");
       }
@@ -30,35 +33,32 @@ function encriptar() {
       if (separado[i] == "u") {
         proceso.push("fat");
       }
-    
-     let resultado = proceso.join("");
+
+      let resultado = proceso.join("");
+      let parrafoSalidad = document.getElementById("textSalida");
+
+      parrafoSalidad.innerHTML = resultado;
+
+      document.getElementById("text").value = "";
+      // place.ariaPlaceholder = "Ingresa texto aquí";
+      imagen.style.display = "none";
+      document.querySelector(".textoParaRetirar").style.display = "none";
+      document.querySelector(".textoParaRetirar2").style.display = "none";
+    }
+
+    //Retorno de encriptación
+    let resultado = proceso.join("");
     let parrafoSalidad = document.getElementById("textSalida");
 
     parrafoSalidad.innerHTML = resultado;
-    
+
+    visible();
 
     document.getElementById("text").value = "";
     // place.ariaPlaceholder = "Ingresa texto aquí";
-    imagen.style.display = "none"
-    document.querySelector(".textoParaRetirar").style.display = "none";
-    document.querySelector(".textoParaRetirar2").style.display = "none";
   }
-
-  //Retorno de encriptación
-  let resultado = proceso.join("");
-  let parrafoSalidad = document.getElementById("textSalida");
-  
-  parrafoSalidad.innerHTML = resultado;
-  
- 
-  visible()
-  
-  document.getElementById("text").value = "";
-  // place.ariaPlaceholder = "Ingresa texto aquí";
-  
 }
 
-  
 // Función desencriptador
 function desencriptador() {
   let retirar = document.querySelector(".textoParaRetirar");
@@ -81,7 +81,7 @@ function desencriptador() {
     }
   }
   parrafoSalidad.innerHTML = arreglo;
-  
+
   document.getElementById("text").value = "";
   document.querySelector(".textoParaRetirar").style.display = "none";
   document.querySelector(".textoParaRetirar2").style.display = "none";
