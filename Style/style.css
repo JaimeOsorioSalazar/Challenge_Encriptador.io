@@ -28,7 +28,7 @@
 
 body {  
   color: var(--Dark_blue_300);
-  background-color: var(--Light_blue_100);
+  background: linear-gradient(90deg, var(--Light_blue_100) 50%, var(--Gray_300) 100%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -140,7 +140,7 @@ button.boton {
   flex-direction: column;
   width: 100dvw;
   color: var(--Light_blue_100);
-  background-color: var(--Dark_blue_300);
+  background: linear-gradient(-90deg, var(--Dark_blue_300) 50%, var(--Dark_blue_100) 100%);
   font-weight: 100;
   font-family: "Inter", sans-serif;
   text-align: center;
