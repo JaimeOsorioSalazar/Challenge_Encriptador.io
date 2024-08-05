@@ -10,13 +10,17 @@ function encriptar() {
   let proceso = [];
   let mayusculas = /[A-Z]/;
   let numeros = /[0-9]/;
-  let especiales = /[@!"#$%&/()áéíóúÁÉÍÓÚ]+$/;
+  let especiales = /[@"#$%&/()áéíóúÁÉÍÓÚ]+$/;
 
-  if (mayusculas.test(parrafo) || numeros.test(parrafo)|| especiales.test(parrafo)) {
+  if (
+    mayusculas.test(parrafo) ||
+    numeros.test(parrafo) ||
+    especiales.test(parrafo)
+  ) {
     // alert("El texto no debe contener números, ni mayusculas");
     alerta.innerHTML = `<i class="fa-solid fa-triangle-exclamation"> El texto no debe contener numeros, acentos o mayusculas  </i>`;
     setTimeout(() => {
-    alerta.innerHTML = " ";
+      alerta.innerHTML = " ";
     }, 6000);
   } else {
     // Proceso de encriptación en curso
@@ -41,6 +45,7 @@ function encriptar() {
 
       let resultado = proceso.join("");
       let parrafoSalidad = document.getElementById("textSalida");
+      visible();
 
       parrafoSalidad.innerHTML = resultado;
 
@@ -66,8 +71,7 @@ function encriptar() {
 
 // Función desencriptador
 function desencriptador() {
-  let retirar = document.querySelector(".textoParaRetirar");
-  let retirar2 = document.querySelector(".textoParaRetirar2");
+  
   let parrafoSalidad = document.getElementById("textSalida");
 
   let cambio = ["ai", "enter", "imes", "ober", "ufat"];
@@ -83,13 +87,17 @@ function desencriptador() {
       if (arreglo.includes(cambio[i])) {
         arreglo = arreglo.replace(new RegExp(cambio[i], "g"), por[i]);
       }
+   
     }
+    
   }
   parrafoSalidad.innerHTML = arreglo;
-
+  document.getElementById("imagen").style.display = "none";
   document.getElementById("text").value = "";
   document.querySelector(".textoParaRetirar").style.display = "none";
   document.querySelector(".textoParaRetirar2").style.display = "none";
+  
+  
   visible();
 }
 
