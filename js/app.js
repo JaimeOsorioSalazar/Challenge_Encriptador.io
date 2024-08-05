@@ -2,7 +2,7 @@
 function encriptar() {
   // Variables declaradas
   let parrafo = document.getElementById("text").value;
-
+  let alerta = document.querySelector(".alert");
   let imagen = document.getElementById("imagen");
 
   let parrafoLowerCase = parrafo.toLowerCase();
@@ -12,7 +12,11 @@ function encriptar() {
   let numeros = /[0-9]/
 
   if (mayusculas.test(parrafo) || numeros.test(parrafo)) {
-    alert("El texto no debe contener nueros o mayusculas");
+    // alert("El texto no debe contener números, ni mayusculas");
+    alerta.innerHTML = `<i class="fa-solid fa-triangle-exclamation"> El texto no debe contener numeros o mayusculas </i>`;
+    setTimeout(() => {
+    alerta.innerHTML = " ";
+    }, 6000);
   } else {
     // Proceso de encriptación en curso
     for (let i = 0; i < separado.length; i++) {

@@ -50,6 +50,13 @@ header {
   border: 0;
   text-align: left;
 }
+input{
+  height: 70%;
+}
+div.alert{
+  color: var(--Gray_300);
+  font-size: 14px;
+}
 #text::placeholder,
 #text:focus-visible {
   color: #0a3871;
