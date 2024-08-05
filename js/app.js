@@ -14,7 +14,7 @@ function encriptar() {
 
   if (mayusculas.test(parrafo) || numeros.test(parrafo)|| especiales.test(parrafo)) {
     // alert("El texto no debe contener números, ni mayusculas");
-    alerta.innerHTML = `<i class="fa-solid fa-triangle-exclamation"> El texto no debe contener numeros o mayusculas </i>`;
+    alerta.innerHTML = `<i class="fa-solid fa-triangle-exclamation"> El texto no debe contener numeros, acentos o mayusculas  </i>`;
     setTimeout(() => {
     alerta.innerHTML = " ";
     }, 6000);
