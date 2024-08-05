@@ -9,9 +9,10 @@ function encriptar() {
   let separado = parrafoLowerCase.split(" ").join(" ");
   let proceso = [];
   let mayusculas = /[A-Z]/;
-  let numeros = /[0-9]/
+  let numeros = /[0-9]/;
+  let especiales = /[@!"#$%&/()áéíóúÁÉÍÓÚ]+$/;
 
-  if (mayusculas.test(parrafo) || numeros.test(parrafo)) {
+  if (mayusculas.test(parrafo) || numeros.test(parrafo)|| especiales.test(parrafo)) {
     // alert("El texto no debe contener números, ni mayusculas");
     alerta.innerHTML = `<i class="fa-solid fa-triangle-exclamation"> El texto no debe contener numeros o mayusculas </i>`;
     setTimeout(() => {
