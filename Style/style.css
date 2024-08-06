@@ -68,6 +68,13 @@ div.alert{
   font-size: 90px;
   text-shadow: 2px 2px 2px var(--Gray_300) ;
 }
+h1.Logo>span{
+  margin-left: -5px;
+  color: var(--Gray_500);
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
 
 /* Contenido visible */
 main.contenido {
