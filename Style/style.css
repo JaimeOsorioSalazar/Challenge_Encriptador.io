@@ -50,10 +50,8 @@ header {
   border: 0;
   text-align: left;
 }
-input{
-  height: 70%;
-}
 div.alert{
+  margin: 10px;
   color: var(--Gray_300);
   font-size: 14px;
 }
