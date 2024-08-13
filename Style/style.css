@@ -144,7 +144,7 @@ button.boton {
 .footer {
   display: flex;
   flex-direction: column;
-  width: 100dvw;
+  width: 100%;
   color: var(--Light_blue_100);
   background: linear-gradient(-90deg, var(--Dark_blue_300) 50%, var(--Dark_blue_100) 100%);
   font-weight: 100;
