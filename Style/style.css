@@ -78,7 +78,7 @@ span{
 /* Contenido visible */
 main.contenido {
   font-family: "Inter", sans-serif;
-  height: 85vh;
+  height: 60vh;
   display: flex;
   gap: 50px;
   margin-left: 170px;
@@ -176,6 +176,11 @@ img.Logo_redes{
   height: 60px;
   margin: 5px;
 }
+#imagen{
+  width: 250px;
+  height: 250px;
+  margin: 5px;
+}
 a{
   letter-spacing: 1px;
   font-weight: 400;
@@ -185,4 +190,32 @@ a{
 a:hover{
   color: var(--Light_blue_100);
   text-shadow: 1px 1px 2px var(--Gray_300);
+}
+
+/* Modo oscuro */
+body.dark-mode {
+  color: var(--Light_blue_100);
+  background: linear-gradient(90deg, var(--Gray_500) 50%, var(--Gray_400) 100%);
+}
+
+body.dark-mode a {
+  color: var(--Light_blue_300);
+}
+
+body.dark-mode a:hover {
+  color: var(--Light_blue_400);
+  text-shadow: 1px 1px 2px var(--Gray_100);
+}
+
+body.dark-mode .footer {
+  background: linear-gradient(-90deg, var(--Gray_500) 50%, var(--Gray_400) 100%);
+}
+
+body.dark-mode button.boton {
+  border: solid 1px var(--Light_blue_100);
+}
+
+body.dark-mode .boton1 {
+  background-color: var(--Gray_500);
+  color: var(--Light_blue_100);
 }
